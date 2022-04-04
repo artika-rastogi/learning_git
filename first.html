@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DASHBOARD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-left">
+  <h1>DASHBOARD</h1>
+  <button class="btn Technicians">All Technicians</button>
+  <button class="btn Scientists">All Scientists</button>
+  <button class="btn Pathologists">All Pathologists</button> 
+</div>
+  
+<header class="page-header">
+  <nav>
+    <h2> My profile</h2>
+    <a href="#0" aria-label="Robert Nero" class="logo">
+      <svg width="140" height="49">
+        <use xlink:href="#logo"></use>
+      </svg>
+    </a>
+    <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
+      <svg width="20" height="20" aria-hidden="true">
+        <use xlink:href="#down"></use>
+      </svg>
+    </button>
+    <ul class="admin-menu">
+      <li class="menu-heading">
+      </li>
+      <li>
+        <a href="#0">
+          <svg>
+            <use xlink:href="#pages"></use>
+          </svg>
+          <span>Dashboard</span>
+        </a>
+        <li>
+          <a href="#0">
+            <svg>
+              <use xlink:href="#pages"></use>
+            </svg>
+            <span>Add New User</span>
+          </a>
+          <li>
+            <a href="#0">
+              <svg>
+                <use xlink:href="#pages"></use>
+              </svg>
+              <span>Manage User</span>
+            </a>
+            <li>
+              <a href="#0">
+                <svg>
+                  <use xlink:href="#pages"></use>
+                </svg>
+                <span>Manage List Items</span>
+              </a>
+              <li>
+                <a href="#0">
+                  <svg>
+                    <use xlink:href="#pages"></use>
+                  </svg>
+                  <span>Sign out</span>
+                </a>
+      </li>
+      </ul>
+  </nav>
+</header>
+<section class="page-content">
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Slide processed </h3>
+      
+      <script>
+      var xValues = [100,200,300,400,500,600,700,800,900,1000];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      borderColor: "red",
+      fill: false
+    },{
+      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      borderColor: "green",
+      fill: false
+    },{
+      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      borderColor: "blue",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+</script>
+    </div>
+    <div class="col-sm-3">
+      <h3>Accuracy</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-3">
+      <h3>2,236,226
+        Completed</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-6">
+      <h3>Number of slides with conflicts</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-3">       
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-3">
+      <h3>Top Conflicts</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-9">
+      <h3>Most number of entries for <select name="Species" id="dropdown"><option value="Species">Species </option></select></h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+</section>
+</body>
+</html>
